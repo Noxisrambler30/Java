@@ -1,0 +1,1881 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --orange:#ff7800;
+    /* #ff7800 */
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+    --white: #fff;
+    background: ;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    
+   
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: linear-gradient(to left, #F5F7FA, #B8C6DB);
+}
+
+section{
+    padding:3rem 9%;
+
+
+}
+
+
+.header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:3rem 5%;
+    background:navy;
+    box-shadow: var(--box-shadow);
+    
+}
+
+.header .logo{
+    font-size: 30px;
+    font-weight: 500;
+    color:var(--white);
+}
+
+.header .logo i{
+    color:var(--white);
+}
+
+
+.header .navbar a{
+    font-size: 25px;
+    margin: 1rem;
+    color:var(--white);
+}
+
+.header .navbar a:hover{
+    color:var(--orange);
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:var(--white);
+    font-size: 2rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../image/bank5.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 29rem;
+    padding-bottom: 35rem;
+}
+
+.home .content{
+    text-align: center;
+    width:60rem;
+}
+
+
+.home .content h3{
+    color:var(--black);
+    font-size: 3rem;
+}
+.home .content h1{
+    font-size: 61px;
+    color: rgb(155, 148, 148);
+     -webkit-text-stroke: 1.5px black;
+}
+
+.home .content h3 span{
+    color:var(--orange);
+}
+
+.home .content p{
+    color:var(--light-color);
+    font-size: 1.7rem;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+
+.homereg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../image/back.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 27rem;
+    padding-bottom: 28rem;
+}
+
+
+.homelogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../image/back.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+
+
+/* mid */
+
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.heritage2 {
+    display: grid;
+    margin-top:-73px;
+    margin-left:-445px;
+}
+
+    .heritage2 .border {
+        width: 655px;
+        height: 230px;
+        padding: 10px;
+        margin-left: 140px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+
+        .heritage2 .border img {
+            display: block;
+            max-width: 100%;
+        }
+        /* ======================== */
+        .heritage2 .border .card {
+            position: relative;
+            width: 962px;
+            height: 250px;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        .heritage2 .border .card__image {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            scale: 1.15;
+            transition: opacity 0.25s, scale 0.35s;
+        }
+
+        .heritage2 .border .card:hover .card__image {
+            opacity: 0.5;
+            scale: 1;
+        }
+
+        .heritage2 .border .card__body {
+            position: absolute;
+            inset: 0;
+            padding: 50px;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 15px;
+            justify-content: center;
+        }
+
+            .heritage2 .border .card__body::before {
+                content: '';
+                position: absolute;
+                inset: 20px;
+                border: 2px solid #fff;
+                opacity: 0;
+                scale: 1.25;
+                transition: opacity 0.25s, scale 0.25s;
+            }
+
+        .heritage2 .border .card:hover .card__body::before {
+            opacity: 1;
+            scale: 1;
+        }
+
+        .heritage2 .border .card__title {
+            -webkit-text-stroke: 1.5px black;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .heritage2 .border .card__description {
+            font-size: 14px;
+            opacity: 0;
+            translate: -25px;
+            transition: opacity 0.25s, translate 0.25s;
+        }
+
+        .heritage2 .border .card__body button {
+            margin-left: 5rem;
+            display: inline-block;
+            padding: .8rem 3rem;
+            font-size: 1.7rem;
+            border-radius: .5rem;
+            border: .2rem solid white;
+            color: white;
+            cursor: pointer;
+            background: none;
+        }
+
+            .heritage2 .border .card__body button:hover {
+                background-color: orange;
+            }
+
+        .heritage2 .border .card:hover .card__description {
+            opacity: 1;
+            translate:  0;
+        }
+
+/* mid*/
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .search-form{
+        width:90%;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:110%; right:-110%;
+        width:30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .header .navbar.active{
+        right:2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin:2rem 2.5rem;
+        display: block;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer .box-container .box .payment-img{
+        margin: 2rem auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+.loginbox {
+    width: 620px;
+    background: #cbc9be;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin: -200px auto;
+    position: relative;
+}
+
+.loginbox1 {
+    width: 425px;
+    height: 500px;
+    background: #c4c4bc;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin: 100px auto;
+    position: relative;
+}
+
+
+.loginbox  h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+}
+
+h2{
+    margin: 0;
+    padding: 0 0 20px;
+    font-size: 22px;
+    color: #000;
+}
+
+h3{
+    margin: 0;
+    padding: 0 1 20px;
+    font-size: 20px;
+    color: #0b0b0c;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+}
+
+
+.loginbox input{
+width: 100%;
+margin-bottom: 20px;
+}
+ 
+.loginbox input[type="text"],input[type="password"]
+ {
+border: none;
+border-bottom: 1px solid #131212;
+background: transparent;
+outline: none;
+height: 40px;
+color:#111111;
+font-size: 16px;
+ }
+
+ 
+.loginbox input[type="submit"]
+{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 1.5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    height: 50px;
+    width: 180px;
+}
+
+.loginbox input[type="submit"]:hover
+{
+cursor: pointer;
+background: #dd1709;
+color: #f5f2f2;
+
+}
+.loginbox input[type="reset"]
+{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 1.5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    height: 50px;
+    width: 180px;
+}
+.loginbox input[type="reset"]:hover
+{
+cursor: pointer;
+background: #f10404;
+color: #fff6f6;
+}
+
+.loginbox button[onclick]
+    {
+        margin-top: 1rem;
+        display: inline-block;
+        padding:.8rem 3rem;
+        font-size: 1.7rem;
+        border-radius: 1.5rem;
+        border:.2rem solid var(--black);
+        color:var(--black);
+        cursor: pointer;
+        background: none;
+        height: 50px;
+        width: 180px;
+    }
+     
+    .loginbox button[onclick]:hover
+    {
+        cursor: pointer;
+        background: #dd2b0c;
+        color: #f1e8e8;
+    
+    }
+
+
+.loginbox a{
+text-decoration: none;
+font-size: 12px;
+line-height: 20px;
+color: darkgrey;
+
+}
+.loginbox a:hover{
+
+color: #ff07c1;
+}
+    
+    input[type="radio"] {
+    display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+
+    input[type="checkbox"] {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+
+    .table{
+        font-size: 25px;
+
+    }
+
+    .table td{
+        border:1px solid #cecece
+    }
+
+    .heading{
+        font-size: 40px;
+        margin: 15px 0;
+        color: rgb(16, 17, 19);
+    }
+
+
+
+.loginbox1 input[type="text"],input[type="password"]
+ {
+border: none;
+border-bottom: 1px solid #070707;
+background: transparent;
+outline: none;
+height: 40px;
+color:#0a0a0a;
+font-size: 16px;
+ }
+
+ 
+.loginbox1 input[type="submit"]
+{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 1.5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    height: 50px;
+    width: 180px;
+}
+
+.loginbox1 input[type="submit"]:hover
+{
+cursor: pointer;
+background: #dd1709;
+color: #f5f2f2;
+}
+
+.loginbox1 input[type="button"]
+{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 1.5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    height: 50px;
+    width: 180px;
+}
+
+.loginbox1 input[type="button"]:hover
+{
+cursor: pointer;
+background: #dd1709;
+color: #f5f2f2;
+}
+
+.loginbox1 input[type="reset"]
+{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 1.5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    height: 50px;
+    width: 180px;
+}
+.loginbox1 input[type="reset"]:hover
+{
+cursor: pointer;
+background: #f10404;
+color: #fff6f6;
+}
+
+.loginbox1 button[onclick]
+    {
+        margin-top: 1rem;
+        display: inline-block;
+        padding:.8rem 3rem;
+        font-size: 1.7rem;
+        border-radius: 1.5rem;
+        border:.2rem solid var(--black);
+        color:var(--black);
+        cursor: pointer;
+        background: none;
+        height: 50px;
+        width: 180px;
+    }
+     
+    .loginbox1 button[onclick]:hover
+    {
+        cursor: pointer;
+        background: #dd2b0c;
+        color: #f1e8e8;
+    
+    }
+    .loginbox1 p{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 24px;
+        color: #000;
+    }
+
+    .loginbox1  h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 30px;
+        color: #000;
+    }
+
+    
+
+    .loginbox1 h4 {
+        margin: -10px;
+        padding: 7px 8px 15px;
+        font-size: 20px;
+        color: #1c1cc7;
+    }
+
+.features .box-container input[type="text"],input[type="password"]
+{
+border: none;
+border-bottom: 1px solid #070707;
+background: transparent;
+outline: none;
+height: 40px;
+color:#0a0a0a;
+font-size: 16px;
+ }
+
+ 
+ .features .box-container input[type="submit"] {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 0.8rem 4rem;
+    font-size: 1.7rem;
+    border-radius: 2.5rem;
+    border: 0.2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    height: 42px;
+    width: 162px;
+}
+.features .box-container input[type="submit"]:hover
+{
+cursor: pointer;
+background: #dd1709;
+color: #f5f2f2;
+}
+
+ 
+
+
+
+.container{
+    width: 700px;
+    height: 630px;
+    margin: 1% auto; 
+    background: navy;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.container .line img {
+    left: 355px;
+    width: 4px;
+    height: 649px;
+    align-items: center;
+    position: relative;
+}
+
+.container2{
+    width: 280px;
+    position: absolute;
+    top: 3px;
+    left: 350px;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.container form{
+    width: 280px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    transition: 0.5s;
+}
+
+.container input[type="text"],input[type="password"]
+ {
+border: none;
+border-bottom: 1px solid white;
+background: transparent;
+outline: none;
+height: 40px;
+color:#fff;
+font-size: 16px;
+ }
+
+.container input[type="date"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+::placeholder{
+    color: white;
+    font-size: 20px;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.container .container2 .btn-box button{
+    width: 110px;
+    margin: 0 10px;
+    height: 35px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ATM PAGE */
+
+
+
+.atm img{
+    width: 100%;
+    height: 100%;  
+}
+
+.atm .details form{
+    height: 500px;
+     width: 400px;
+    position: absolute;
+    top: 87px;
+    left: 400px;
+    transition: 0.5s;
+}
+
+.atm .details input{
+    color: rgb(251, 250, 255);
+     border-bottom: 1px solid white;
+} 
+
+.atm .details input[type="text"] {
+    width: 78%;
+    border-bottom: 1px solid rgb(230, 230, 238);
+    margin: 19px -250px;
+}
+
+.atm .details input[type="password"] {
+    width: 45%;
+    border-bottom: 1px solid white;
+    margin: 10px -250px
+}
+
+.atm .details .put{
+    margin-left: 30%;
+}
+
+.atm .details .put3{
+    margin-left: 30%;
+}
+
+
+.atm .details .put1{
+     margin-left: 30%;
+    width: 500px;
+}
+.atm .details .put1{
+    margin-top: 20px;
+}
+
+.atm .details .put2{
+    width:10%;
+    height:10%;
+}
+
+.atm .details .btn3{
+    display: grid;
+    margin: -76px 220px;
+}
+
+.atm .details .btn4{
+    display: grid;
+    margin: 72.5% -183px;
+}
+
+.atm .details button{
+     width: 110px;
+    height: 35px;
+    background-color: navy;
+    margin: 4px;
+     color: #fff;
+    cursor: pointer;    
+     border-radius: 30px;
+}
+
+
+
+.atm .details .heading h3{
+    margin-left: 10%;
+    margin-top: -26%;
+    margin-bottom: 9%;
+}
+
+
+/* User loginbox */
+
+.ulogin{
+    width: 400px;
+    height: 400px;
+    margin: 10% auto; 
+    background: navy;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.ulogin .line img {
+    left: 355px;
+    width: 4px;
+    height: 649px;
+    align-items: center;
+    position: relative;
+}
+
+.ulogin h3{
+    font-size:25px;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+.ulogin .link a{ 
+    display:grid;
+    margin-top:2%;
+    font-size:20px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.ulogin form{
+    width: 280px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    transition: 0.5s;
+}
+
+.ulogin input[type="text"],input[type="password"]
+ {
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 40px;
+color:#fff;
+font-size: 16px;
+margin: 5% auto;
+ }
+
+
+form input{
+    
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+::placeholder{
+    color: white;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.ulogin .btn-box button{
+    width: 110px;
+    margin: 0 11px;
+    margin-left:10px;
+    height: 35px;
+    background: linear-gradient(to bottom, #A1C4FD , #C2E9FB);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+/* Admin loginbox*/
+
+.alogin{
+    width: 400px;
+    height: 400px;
+    margin: 10% auto; 
+    background: navy;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.alogin .line img {
+    left: 355px;
+    width: 4px;
+    height: 649px;
+    align-items: center;
+    position: relative;
+}
+
+.alogin h3{
+    font-size:25px;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+.alogin .link a{ 
+    display:grid;
+    margin-top:2%;
+    font-size:20px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.alogin form{
+    width: 280px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    transition: 0.5s;
+}
+
+.alogin input[type="text"],input[type="password"]
+ {
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 40px;
+color:#fff;
+font-size: 16px;
+margin: 10% auto;
+ }
+
+
+form input{
+    
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+::placeholder{
+    color: white;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.alogin .btn-box button{
+    width: 110px;
+    margin: 0 11px;
+    margin-left:10px;
+    height: 35px;
+    background: linear-gradient(to bottom, #A1C4FD , #C2E9FB);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+/*Uforgot  */
+
+.uforgot{
+    width: 400px;
+    height: 400px;
+    margin: 10% auto; 
+    background: navy;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.uforgot .line img {
+    left: 355px;
+    width: 4px;
+    height: 649px;
+    align-items: center;
+    position: relative;
+}
+
+.uforgot h3{
+    font-size:25px;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+.uforgot form{
+    width: 280px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    transition: 0.5s;
+}
+
+.uforgot input[type="text"],input[type="password"]
+ {
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 40px;
+color:#fff;
+font-size: 16px;
+margin: 5% auto;
+ }
+
+
+form input{
+    
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+::placeholder{
+    color: white;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.uforgot .btn-box button{
+    width: 110px;
+    margin: 0 11px;
+    margin-left:10px;
+    height: 35px;
+    background: linear-gradient(to bottom, #A1C4FD , #C2E9FB);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+/* Atm box*/
+.atmbx .bximg .inc {
+    margin-top: -10px;
+}
+.atmbx{
+    width: 100%;
+    height: 100%; 
+}  
+
+
+.atmbx .bximg .option .head{
+    position:fixed;
+    margin-top: -12%;
+    margin-left: 30%;
+}
+.atmbx .bximg h2{
+    color: white;
+    text-align: center;
+}
+
+atmbx .bximg .inc {
+    color: white;
+    text-align: center;
+}
+
+.atmbx .bximg h3 {
+    color: white;
+    text-align: center;
+    margin-left: -55px;
+}
+
+.atmbx .bximg img{
+     width: 100%;
+    height: 100%;
+}
+
+.atmbx .bximg{
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+.atmbx .bximg .option{
+    width: 100%;
+    margin-top: -81.5%;
+}
+
+.atmbx .bximg .option .inc {
+    width: 100%;
+    margin-top: 40%;
+    margin-left: -13%;
+}
+
+    .atmbx .bximg .option h2 {
+        margin-left:1%;
+        margin-top:41%;
+    }
+
+    .atmbx .bximg .option h3 {
+        margin-left: -25%;
+        margin-top: 41%;
+    }  
+.atmbx .bximg .option .sec1{
+    display: grid;
+    width: 118px;
+    margin-top: 5%;
+    margin-left:17%;
+}
+
+
+    .atmbx .bximg .option .sec2 {
+        display: grid;
+        width: 118px;
+        margin-top: -7%;
+        margin-left: 48%;
+    }
+
+    .atmbx .bximg .option .sec3 {
+        display: grid;
+        width: 118px;
+        margin-top: 0%;
+        margin-left: 48%;
+    }
+
+.atmbx .bximg .option .sec1 button{
+    cursor: pointer;
+    width:120px;
+    height:40px;
+    border-radius: 20px;    
+    background-color: navy;
+    margin: 2px;
+}
+    .atmbx .bximg .option .sec1 input[type="text"] {
+        width: 150%;
+        background: content-box;
+        border-bottom: 1px solid rgb(230, 230, 238);
+        color:white;
+        margin: -13px 42px;
+    }
+
+    .atmbx .bximg .option .sec2 button {
+        cursor: pointer;
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: navy;
+        margin-top: 95px;
+    }
+
+    .atmbx .bximg .option .sec3 button {
+        cursor: pointer;
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: navy;
+        margin-top: 5px;
+    }
+/*atmbx*/
+
+/* revert atmbx*/
+.ratmbx {
+    width: 100%;
+    height: 100%;
+}
+
+
+    .ratmbx .bximg .option .head {
+        position: fixed;
+        margin-top: -13%;
+        margin-left: 32%;
+    }
+
+    .ratmbx .bximg h2 {
+        color: white;
+        text-align: center;
+    }
+
+
+
+.ratmbx .bximg h3 {
+    color: white;
+    text-align: center;
+    margin-left: -55px;
+}
+
+.ratmbx .bximg img {
+    width: 100%;
+    height: 100%;
+}
+
+.ratmbx .bximg {
+    width: 100%;
+    height: 100%;
+}
+
+
+    .ratmbx .bximg .option {
+        width: 100%;
+        margin-top: -36.5%;
+    }
+
+        .ratmbx .bximg .option .inc {
+            width: 100%;
+            margin-top: 40%;
+            margin-left: -13%;
+        }
+
+        .ratmbx .bximg .option h2 {
+            margin-left: 1%;
+            margin-top: 41%;
+        }
+
+        .ratmbx .bximg .option h3 {
+            margin-left: -25%;
+            margin-top: 41%;
+        }
+
+        .ratmbx .bximg .option .sec1 {
+            display: grid;
+            width: 118px;
+            margin-top: 5%;
+            margin-left: 17%;
+        }
+
+
+        .ratmbx .bximg .option .sec2 {
+            display: grid;
+            width: 118px;
+            margin-top: -10%;
+            margin-left: 48%;
+        }
+
+        .ratmbx .bximg .option .sec1 button {
+            cursor: pointer;
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: navy;
+            margin: 2px;
+        }
+
+        .ratmbx .bximg .option .sec2 button {
+            cursor: pointer;
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: navy;
+            margin: 2px;
+        }
+/* revert atmbx*/
+
+ /*Deposit */
+
+ 
+.deposit img{
+    width: 100%;
+    height: 100%;  
+}
+
+.deposit .details form{
+    height: 500px;
+     width: 400px;
+    position: absolute;
+    top: 125px;
+    left: 400px;
+    transition: 0.5s;
+}
+
+.deposit .details input{
+    color: rgb(251, 250, 255);
+     border-bottom: 1px solid white;
+} 
+
+.deposit .details input[type="text"] {
+    width: 80%;
+    border-bottom: 1px solid rgb(230, 230, 238);
+    margin: 169px -182px;
+}
+
+
+
+.deposit .details .put{
+    margin-left: 30%;
+}
+
+.deposit .details .put1{
+     margin-left: 30%;
+    width: 500px;
+}
+.deposit .details .put1{
+    margin-top: 20px;
+}
+
+.deposit .details .put2{
+    width:10%;
+    height:10%;
+}
+
+.deposit .details .btn3{
+    display: grid;
+    margin: -200px 350px;
+}
+
+.deposit .details .btn3 button{
+     width: 116px;
+    height: 38px;
+    background-color: navy;
+    margin: 10px;
+     color: #fff;
+    cursor: pointer;    
+     border-radius: 8px;
+}
+
+
+
+.deposit .details .heading h3{
+    margin-left: 10%;
+    margin-top: -26%;
+    margin-bottom: 9%;
+}
+
+
+  /*Deposit */
+
+
+
+ /* Fast cash*/
+ 
+.fast img{
+    width: 100%;
+    height: 100%;  
+}
+
+.fast .details form{
+    height: 500px;
+     width: 400px;
+    position: absolute;
+    top: 125px;
+    left: 400px;
+    transition: 0.5s;
+}
+
+.fast .details input{
+    color: rgb(251, 250, 255);
+     border-bottom: 1px solid white;
+} 
+
+.fast .details input[type="text"] {
+    width: 78%;
+    border-bottom: 1px solid rgb(230, 230, 238);
+    margin: 40px -250px;
+}
+
+.fast .details input[type="password"] {
+    width: 45%;
+    border-bottom: 1px solid white;
+    margin: 10px -250px
+}
+
+.fast .details .put{
+    display: grid;
+    margin-left: -40%;
+    margin-top: 20%;
+}
+
+.fast .details .put button{
+     width: 110px;
+    height: 35px;
+    background-color: navy;
+    margin: 4px;
+     color: #fff;
+    cursor: pointer;    
+     border-radius: 30px;
+}
+
+.fast .details .put1{
+     margin-left: 30%;
+    width: 500px;
+}
+.fast .details .put1{
+    margin-top: 20px;
+}
+
+.fast .details .put2{
+    width:10%;
+    height:10%;
+}
+
+.fast .details .btn3{
+    display: grid;
+    margin: -132px 220px;
+}
+
+.fast .details .btn3 button{
+     width: 110px;
+    height: 35px;
+    background-color: navy;
+    margin: 4px;
+     color: #fff;
+    cursor: pointer;    
+     border-radius: 30px;
+}
+
+.fast .head{
+    position:fixed;
+    margin-top: 8%;
+    margin-left:  32%;
+}
+.fast .head h3{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+ /* Fast cash*/
+
+
+
+ /* Pin change*/
+
+ 
+.pchng img{
+    width: 100%;
+    height: 100%;  
+}
+
+.pchng .details form{
+    height: 500px;
+     width: 400px;
+    position: absolute;
+    top: 125px;
+    left: 380px;
+    transition: 0.5s;
+}
+
+.pchng .details h2{
+    font-color:white;
+}
+.pchng .details input{
+    color: rgb(251, 250, 255);
+     border-bottom: 1px solid white;
+} 
+
+.pchng .details input[type="password"] {
+    width: 60%;
+    border-bottom: 1px solid rgb(230, 230, 238);
+    margin: 30px -250px;
+}
+
+.pchng .details .put{
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+.pchng .details .put1{
+     margin-left: 30%;
+    width: 500px;
+}
+.pchng .details .put1{
+    margin-top: 10px;
+}
+
+.pchng .details .put2{
+    width:10%;
+    height:10%;
+}
+.pchng .details .put3{
+    margin-left: 30%;
+   width: 500px;
+}
+
+.pchng .details .btn3{
+    display: grid;
+    margin: -100px 240px;
+}
+
+.pchng .details button{
+     width: 110px;
+    height: 35px;
+    background-color: navy;
+    margin: 4px;
+     color: #fff;
+    cursor: pointer;    
+     border-radius: 30px;
+}
+
+
+
+.pchng .details .heading h3{
+    margin-left: 10%;
+    margin-top: -26%;
+    margin-bottom: 9%;
+}
+
+ /* Pin change*/
+
+
+
+
+ /* Pin change php */
+
+.pchange img{
+    width: 100%;
+    height: 100%;  
+}
+
+.pchange .details form{
+    height: 500px;
+     width: 400px;
+    position: absolute;
+    top: 125px;
+    left: 310px;
+    transition: 0.5s;
+}
+
+.pchange .details h2{
+    color:white;
+}
+
+.pchange .details h3{
+    color:white;
+    text-align:center;
+    margin-left:-50px;
+}
+
+
+.pchange .details button {
+    width: 110px;
+    height: 35px;
+    background-color: navy;
+    margin-top: 16.5%;
+    margin-left: 78%;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+
+ /* Pin change php*/
+
+
+ /*Withdraw */
+
+ 
+.draw img{
+    width: 100%;
+    height: 100%;  
+}
+
+.draw .details form{
+    height: 500px;
+     width: 400px;
+    position: absolute;
+    top: 125px;
+    left: 400px;
+    transition: 0.5s;
+}
+
+.draw .details input{
+    color: rgb(251, 250, 255);
+     border-bottom: 1px solid white;
+} 
+
+.draw .details input[type="text"] {
+    width: 78%;
+    border-bottom: 1px solid rgb(230, 230, 238);
+    margin: 79px -250px;
+}
+
+
+.draw .details .put{
+    margin-left: 30%;
+}
+
+.draw .details .put1{
+     margin-left: 30%;
+    width: 500px;
+}
+.draw .details .put1{
+    margin-top: 20px;
+}
+
+.draw .details .put2{
+    width:10%;
+    height:10%;
+}
+
+.draw .details .btn3{
+    display: grid;
+    margin: -76px 220px;
+}
+
+.draw .details .btn3 button{
+     width: 110px;
+    height: 35px;
+    background-color: navy;
+    margin: 4px;
+     color: #fff;
+    cursor: pointer;    
+     border-radius: 30px;
+}
+
+.draw h3{
+    font-size: 35px;
+    margin-left: -25%;
+    margin-top: -43%;
+}
+
+
+ /*Withdraw */
+
+
+
+
+
+
+ /* Mini statement*/
+
+.mini img {
+    width: 100%;
+    height: 100%;
+}
+
+.mini .details form {
+    height: 500px;
+    width: 260px;
+    position: absolute;
+    top: 100px;
+    left: 245px;
+    transition: 0.5s;
+}
+
+.mini .details .scroll {
+    width: 190%;
+    height: 52%;
+    overflow-x: hidden;
+    overflow-y:auto;
+    padding: 0px 100px 0px 0px;
+}
+
+.mini .details h2 {
+    color: white;
+}
+
+.mini .details h3 {
+    color: white;
+    text-align: center;
+    margin-left: -100px;
+}
+
+ /* Mini statement*/
+
+
+
+
+ /* Check balance */
+ 
+.balance img{
+    width: 100%;
+    height: 100%;  
+}
+
+.balance .details form{
+    height: 500px;
+     width: 400px;
+    position: absolute;
+    top: 125px;
+    left: 400px;
+    transition: 0.5s;
+}
+
+.balance .details input{
+    color: rgb(251, 250, 255);
+     border-bottom: 1px solid white;
+} 
+
+.balance .details input[type="text"] {
+    width: 78%;
+    border-bottom: 1px solid rgb(230, 230, 238);
+    margin: 40px -250px;
+}
+
+.balance .details input[type="password"] {
+    width: 45%;
+    border-bottom: 1px solid white;
+    margin: 10px -250px
+}
+
+.balance .details .put{
+    margin-left: 30%;
+}
+
+
+
+.balance .details .put1{
+     margin-left: 30%;
+    width: 500px;
+}
+.balance .details .put1{
+    margin-top: 20px;
+}
+
+.balance .details .put2{
+    width:10%;
+    height:10%;
+}
+
+.balance .details .btn3{
+    display: grid;
+    margin: -76px 220px;
+}
+
+.balance .details .btn3 button{
+     width: 110px;
+    height: 35px;
+    background-color: navy;
+    margin: 4px;
+     color: #fff;
+    cursor: pointer;    
+     border-radius: 30px;
+}
+
+
+
+.balance h3{
+     font-size: 35px;
+    margin-left: -25%;
+    margin-top: -43%;
+}
+
+ /* Check balance */
+
+
+ 
+
+
+
+.features .box-container4 .box4 button{
+    cursor:pointer;
+    width: 110px;
+    height: 35px;
+    background-color: navy;
+    margin: 4px;
+     color: #fff;
+    cursor: pointer;    
+     border-radius: 30px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left:4px;
+}
+
+td {
+    text-align: left;
+    
+    padding: 8px;
+    border: 1px solid #ddd;
+    color: whitesmoke;
+}
+
+ th {
+    background-color: navy;
+    color: navy;
+}
+
+tr {
+    background-color: navy;
+}
+tr:nth-child(even) {
+    background-color: navy;
+}
+
+ tr:hover {
+    background-color: navy;
+}
+
+
